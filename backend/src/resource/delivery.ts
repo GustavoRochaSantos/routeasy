@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const deliverySchema = new mongoose.Schema(
   {
     clienteNome: String,
-    pesoKG: Float32Array,
+    peso: Number,
     endereco: {
       logradouro: String,
       numero: Number,
@@ -13,8 +13,8 @@ const deliverySchema = new mongoose.Schema(
       estado: String,
       pais: String,
       geolocalizacao: {
-        Latitude: Number,
-        Longitude: Number,
+        latitude: Number,
+        longitude: Number,
       },
     },
   },

@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 mongoose.connect(
-  'mongodb://localhost:8081/',
+  'mongodb://localhost:27017/routeasy',
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,
