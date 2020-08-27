@@ -18,8 +18,8 @@ deliveriesRoutes.get('/', (req, res) => {
   })
 });
 
-deliveriesRoutes.delete('/', (req, res) => {
-  Deliveries.deleteMany({})
+deliveriesRoutes.delete('/', async (req, res) => {
+  await Deliveries.deleteMany({})
     .then(()=>{
       return res.json({message: "Registros excluídos com sucesso."})
     })

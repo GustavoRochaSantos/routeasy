@@ -10,10 +10,9 @@ import './database/db';
 
 const server = express();
 
+server.use(cors());
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: false }));
-// server.use(cors());
-// server.use(helmet());
 server.use(routes);
 
 server.use(

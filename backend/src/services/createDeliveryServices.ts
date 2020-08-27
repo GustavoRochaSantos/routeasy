@@ -9,7 +9,6 @@ interface Params {
     __v?:number;
 }
 
-
 class CreateDeliveryServices { 
     public async execute(data:Params): Promise<void>{
         const { clienteNome, peso, endereco } = data
@@ -28,15 +27,7 @@ class CreateDeliveryServices {
             clienteNome, peso, endereco
         })
 
-        newDelivery.save(error=>{
-        console.log(error)
-        if(error){
-            throw new AppError("Endereco não informado. Verifique!", 500)
-        } else {
-            console.log(newDelivery)
-            return newDelivery
-        }
-        })
+        await newDelivery.save()
     }   
 }
 
