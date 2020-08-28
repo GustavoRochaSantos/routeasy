@@ -9,7 +9,7 @@ import AppError from './errors/AppError';
 import './database/db';
 
 const server = express();
-
+server.use(helmet())
 server.use(cors());
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: false }));

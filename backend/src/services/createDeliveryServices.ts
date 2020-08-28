@@ -1,10 +1,11 @@
 import AppError from "../errors/AppError"
 import Deliveries from '../resource/delivery'
+import DeliveryType from "../model/Delivery/interface";
 
 interface Params { 
     clienteNome: string, 
     peso: Number, 
-    endereco: object,
+    endereco: DeliveryType,
     _id?:string,
     __v?:number;
 }
@@ -19,7 +20,8 @@ class CreateDeliveryServices {
         if(!peso){
             throw new AppError("Peso não informado. Verifique!", 400)
         }
-        if(!endereco){
+        if(!endereco || !endereco.geolocalizacao.latitude || !!endereco.geolocalizacao.longitude){
+               
             throw new AppError("Endereco não informado. Verifique!", 400)
         }
 
