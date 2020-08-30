@@ -1,3 +1,6 @@
+/**
+ * Classe usada para disparar os erros padrões
+ */
 class AppError {
   public readonly message: string;
 

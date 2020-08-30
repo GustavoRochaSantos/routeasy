@@ -1,3 +1,7 @@
+/**
+ * Resource/Model do Delivery
+ */
+
 import mongoose from 'mongoose';
 
 const deliverySchema = new mongoose.Schema(

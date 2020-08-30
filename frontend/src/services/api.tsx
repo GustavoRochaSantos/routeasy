@@ -1,3 +1,6 @@
+/**
+ * API básica apontando para o backend
+ */
 import axios from 'axios';
 
 const api = axios.create({

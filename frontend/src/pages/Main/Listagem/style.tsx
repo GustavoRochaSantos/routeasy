@@ -1,30 +1,29 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.div`
   grid-area: listagemContainer;
 
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding-top: 10px;
   background: #fff;
-  min-height: 100px;
+  max-height: 300px;
+  overflow-y: scroll;
 
-  div{
+  div {
     width: 80%;
     margin-bottom: 10px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
 
-    span{ 
-      font-weight:bold;
+    span {
+      font-weight: bold;
     }
   }
-  
- 
-`
-export const Table = styled.table` 
+`;
+export const Table = styled.table`
   width: 80%;
   background-color: #ffffff;
   border-collapse: collapse;
@@ -32,10 +31,11 @@ export const Table = styled.table`
   border-color: #d9d9d9;
   border-style: solid;
   color: #000000;
+  margin-bottom: 10px;
 
   td,
   th {
-    text-align:left;
+    text-align: left;
     border-width: 1px;
     border-color: #d9d9d9;
     border-style: solid;
@@ -45,7 +45,8 @@ export const Table = styled.table`
   tr:nth-child(even) {
     background-color: #dddddd;
   }
-  thead,tfoot {
+  thead,
+  tfoot {
     background-color: #f7f7f7;
   }
-`
+`;

@@ -1,16 +1,21 @@
-import React, { ButtonHTMLAttributes } from 'react'
-import { Container } from '../Button/style'
+/**
+ * Componente do botão
+ */
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
+import React, { ButtonHTMLAttributes } from 'react';
+import { Container } from './style';
+
+// -- Adiciona alguns parametros no elemento
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   secondary?: boolean;
-  handleIconClick?():void
+  handleIconClick?(): void;
 }
 
-
-const Button: React.FC<ButtonProps> = ({ children, ...rest}) => (
+// -- Cria o componente
+const Button: React.FC<ButtonProps> = ({ children, ...rest }) => (
   <Container type="button" {...rest}>
-    { children } 
+    {children}
   </Container>
-)
+);
 
-export default Button
+export default Button;

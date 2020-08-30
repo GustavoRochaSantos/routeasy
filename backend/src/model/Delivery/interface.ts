@@ -1,3 +1,7 @@
+/**
+ * Interface do endereço
+ */
+
 export default interface DeliveryData { 
     geolocalizacao: {
       longitude: number,

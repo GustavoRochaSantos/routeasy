@@ -1,17 +1,22 @@
-import React from 'react'
-import RoutEasy from '../../assets/routeasy-complex.png'
-import { Header } from './style'
+/**
+ * Cabeçalho da Aplicação
+ */
 
-const HeaderMenu:React.FC = () => {
+import React from 'react';
+import RoutEasy from '../../assets/routeasy-complex.png';
+import { Header } from './style';
 
+// -- Cria o componente
+const HeaderMenu: React.FC = () => {
   return (
     <Header>
-      <img src={RoutEasy} alt="RoutEasy"/>
+      <img src={RoutEasy} alt="RoutEasy" />
       <div id="menu">
         <ul>
           <li>Gerar Entrega</li>
           <li>|</li>
-          <li>Gustavo Rocha
+          <li>
+            Gustavo Rocha dos Santos
             {/* <ul>
             <li>Meu perfil</li>
             <li>Alterar senha</li>
@@ -22,7 +27,7 @@ const HeaderMenu:React.FC = () => {
         </ul>
       </div>
     </Header>
-  )
-}
+  );
+};
 
-export default HeaderMenu
+export default HeaderMenu;

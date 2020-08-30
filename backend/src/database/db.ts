@@ -1,3 +1,7 @@
+/**
+ * Conecta no banco mongodb
+ */
+
 import mongoose from 'mongoose';
 
 mongoose.connect(
@@ -8,9 +12,9 @@ mongoose.connect(
   },
   err => {
     if (err) {
-      console.log('Some error occurred while connecting to the db');
+      console.error('\x1b[31m%s\x1b[30m', 'Some error occurred while connecting to the db');
     } else {
-      console.log('Db connected Successfully');
+      console.log('\x1b[32m%s\x1b[30m', 'DB running on: http://localhost:27017/routeasy');
     }
   },
 );
