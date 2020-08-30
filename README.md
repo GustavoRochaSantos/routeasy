@@ -1,6 +1,8 @@
 # RoutEasy Fullstack Challenge
 This is my test to join your team, enjoy!
 
+<img src="https://github.com/GustavoRochaSantos/routeasy/blob/master/challenge.png">
+
 Briefing can be found in https://github.com/RoutEasy/challenge-fullstack
 
 ### Installation
